@@ -68,7 +68,7 @@ ul {
 }
 
 .header__logo {
-  height: 72px;
+  height: 50px;
   margin-right: 1em;
   vertical-align: top;
   margin-top: 12px;
@@ -76,8 +76,8 @@ ul {
 
 .header__title {
   font-weight: 300;
-  font-size: 4em;
-  margin: 0.5em 0.25em;
+  font-size: 2em;
+  margin: 1.1em 0.5em;
   display: inline-block;
   color: #212121;
 }
@@ -155,7 +155,7 @@ main {
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
-  height: 300px;
+  height: 220px;
 }
 
 .hero article {
@@ -164,7 +164,7 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
-  height: 40%;
+  height: 65%;
   width: 100%;
   color: #fff;
   padding: 1em;
@@ -380,22 +380,6 @@ footer a {
   color: #333;
 }
 
-@media screen and (max-width: 768px) {
-  .header__logo {
-    height: 50px;
-  }
-  .header__title {
-    font-size: 2em;
-    margin: 1.1em 0.5em;
-  }
-  .hero {
-    height: 220px;
-  }
-  .hero article {
-    height: 65%;
-  }
-}
-
 @media screen and (min-width: 333px) {
   .hero article {
     height: 43%;
@@ -414,5 +398,41 @@ footer a {
   }
   .hero article {
     height: 30%;
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .header__logo {
+    padding-left: 10px;
+  }
+
+  .hero {
+    float: left;
+    width: 60%;
+  }
+    .hero article {
+      height: 36%;
+    }
+
+  .top-news {
+    float: right;
+    width: 40%;
+    border-bottom: none;
+  }
+
+  .scores {
+    float: left;
+    width: 60%;
+    padding-top: 1.5em;
+  }
+
+  .weather {
+    float: right;
+    width: 40%;
+    padding: 0 1em;
+  }
+
+  .recent-news {
+    padding-top: 2em;
   }
 }
